@@ -118,7 +118,7 @@ export async function POST(request: Request) {
       success: true,
       data: {
         id: newEntry.id,
-        email: newEntry.email,
+        email: newEntry.email, // Only show to the person who just signed up
         referralCode: newEntry.referral_code,
         position: count || 0,
       },
