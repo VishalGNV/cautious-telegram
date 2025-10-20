@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { ThemeProvider } from "next-themes";
-import { CursorTrail } from "@/components/cursor-trail";
+// import { CursorTrail } from "@/components/cursor-trail"; // Temporarily disabled for Railway build
 import "./globals.css";
 
 const defaultUrl = process.env.VERCEL_URL
@@ -34,7 +34,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <CursorTrail />
+          {/* <CursorTrail /> */}
           {children}
         </ThemeProvider>
       </body>
