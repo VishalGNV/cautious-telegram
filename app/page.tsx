@@ -12,8 +12,8 @@ export default function Home() {
         <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
           <div className="w-full max-w-6xl flex justify-between items-center p-3 px-5">
             <div className="flex gap-2 items-center font-bold text-xl">
-              <span className="text-2xl">🔗</span>
-              <span>LinkHub</span>
+              <span className="text-2xl">�</span>
+              <span>WaitlistHub</span>
             </div>
             <ThemeSwitcher />
           </div>
@@ -74,7 +74,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="w-full flex items-center justify-center border-t mx-auto text-center text-sm gap-8 py-16 text-muted-foreground">
-          <p>© 2025 LinkHub. All rights reserved.</p>
+          <p>© 2025 WaitlistHub. All rights reserved.</p>
         </footer>
       </div>
     </main>

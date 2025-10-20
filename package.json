@@ -1,4 +1,7 @@
 {
+  "name": "waitlist-hub",
+  "version": "1.0.0",
+  "description": "A modern waitlist management platform built with Next.js and Supabase",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
