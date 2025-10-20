@@ -1,0 +1,14 @@
+[phases.setup]
+nixPkgs = ['nodejs_20']
+
+[phases.install]
+cmds = [
+  'npm ci --omit=dev --ignore-scripts',
+  'npm install --save-dev @types/node @types/react @types/react-dom typescript'
+]
+
+[phases.build]
+cmds = ['npm run build']
+
+[start]
+cmd = 'npm start'

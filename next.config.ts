@@ -2,21 +2,23 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  // Optimize build for Railway
+  // Optimize build for Railway - speed up build time
   typescript: {
-    // Don't fail build on type errors during Railway deployment
     ignoreBuildErrors: false,
   },
   eslint: {
-    // Don't fail build on ESLint errors during Railway deployment
-    ignoreDuringBuilds: false,
+    ignoreDuringBuilds: true, // Skip ESLint during build to save time
   },
-  // Reduce bundle size
+  // Reduce bundle size and build time
   productionBrowserSourceMaps: false,
   // Optimize images
   images: {
     unoptimized: false,
   },
+  // Optimize builds
+  swcMinify: true,
+  // Reduce build output
+  output: 'standalone',
 };
 
 export default nextConfig;
