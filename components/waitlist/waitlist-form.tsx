@@ -55,7 +55,7 @@ export function WaitlistForm() {
         sessionStorage.setItem("waitlistData", JSON.stringify(data.data));
         router.push("/waitlist/success");
       }
-    } catch (err) {
+    } catch {
       setError("Failed to join waitlist. Please try again.");
       setIsLoading(false);
     }
