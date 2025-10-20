@@ -3,6 +3,7 @@ import { WaitlistForm } from "@/components/waitlist/waitlist-form";
 import { WaitlistStats } from "@/components/waitlist/waitlist-stats";
 import { FeatureGrid } from "@/components/waitlist/feature-grid";
 import { Badge } from "@/components/ui/badge";
+import { Sparkles } from "lucide-react";
 
 export default function Home() {
   return (
@@ -11,9 +12,11 @@ export default function Home() {
         {/* Navigation */}
         <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
           <div className="w-full max-w-6xl flex justify-between items-center p-3 px-5">
-            <div className="flex gap-2 items-center font-bold text-xl">
-              <span className="text-2xl">�</span>
-              <span>WaitlistHub</span>
+            <div className="flex gap-2 items-center font-bold text-xl hover:opacity-80 transition-opacity cursor-pointer">
+              <Sparkles className="h-6 w-6 text-primary" />
+              <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+                WaitlistHub
+              </span>
             </div>
             <ThemeSwitcher />
           </div>
