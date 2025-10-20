@@ -15,9 +15,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: false,
   },
-  // Optimize builds
-  swcMinify: true,
-  // Reduce build output
+  // Reduce build output - creates standalone build
   output: 'standalone',
 };
 
